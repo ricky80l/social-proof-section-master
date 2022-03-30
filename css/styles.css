@@ -8,7 +8,6 @@
 body {
     min-height: 100vh;
     font-weight: 400;
-    overflow-x: hidden;
 }
 
 .flexbox {
@@ -21,6 +20,10 @@ body {
 .col-sm-4,
 .col-sm-6 {
     height: 300px;
+}
+
+.row {
+    margin: 0;
 }
 
 
@@ -73,7 +76,7 @@ h1,
 .stars {
     width: 100%;
     margin: 0 !important;
-    padding: 1rem 0 5rem;
+    padding: 1rem 0 9rem;
     display: flex;
     justify-content: right;
 }
@@ -274,9 +277,13 @@ h1,
         margin-right: 0.75rem;
     }
     @media screen and (max-width:767px) {
+        .main {
+            width: 90%;
+            padding: 0;
+        }
         h1 {
             font-size: 2.2rem;
-            padding: 0 4rem 1rem;
+            padding: 5rem 4rem 1rem;
         }
         .description {
             padding: 0 4rem 1rem;
