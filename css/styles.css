@@ -1,0 +1,285 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.col-sm-4,
+.col-sm-6 {
+    height: 300px;
+}
+
+
+/* MAIN SECTION */
+
+.main {
+    max-width: 91rem;
+    min-height: 35.87rem;
+    font-size: 0.9375rem;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-size: cover;
+    background-position: 146rem -173rem, 17rem;
+    padding: 5%;
+    box-shadow: 0px 9px 40px 1rem rgb(0 0 0 / 47%);
+}
+
+.container {
+    padding: 0;
+}
+
+.col-lg-6 {
+    padding: 0;
+}
+
+
+/* FIRST SECTION */
+
+.first-row {
+    width: 30rem;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+}
+
+h1,
+.stars p {
+    color: hsl(300, 43%, 22%);
+}
+
+
+/* STARS SECTION */
+
+.stars {
+    width: 100%;
+    margin: 0 !important;
+    padding: 1rem 0 5rem;
+    display: flex;
+    justify-content: right;
+}
+
+.cont-stars {
+    margin-right: 0;
+    width: auto;
+    padding-right: 0;
+}
+
+.first p,
+.second p,
+.third p {
+    width: 27rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.none {
+    display: none;
+}
+
+.first,
+.second,
+.third {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 0.3rem;
+    width: max-content;
+    line-height: 2.5rem;
+}
+
+.second {
+    margin: 1rem 0;
+    margin-left: 2rem;
+}
+
+.third {
+    margin-left: 4rem;
+}
+
+.star:first-child {
+    margin-left: 1rem;
+}
+
+.star {
+    margin-right: 0.45rem;
+}
+
+.star:last-child {
+    margin-right: 1.4rem;
+}
+
+
+/* REVIEWS SECTION */
+
+.review {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.4rem;
+    color: hsl(0, 0%, 100%);
+    margin: 0 1rem 0rem;
+    width: 25rem;
+    height: 14rem;
+}
+
+.review:nth-child(1) {
+    margin-left: 0;
+}
+
+.review:nth-child(2) {
+    margin-top: 0.9rem;
+}
+
+.review:nth-child(3) {
+    margin-top: 1.8rem;
+    margin-right: 0;
+}
+
+.cont-rev {
+    padding: 1.2rem;
+}
+
+.cont-rev .portrait {
+    border-radius: 100%;
+    width: 3rem;
+    margin-right: 1.3rem;
+    float: left;
+}
+
+.people {
+    margin-top: 0.3rem;
+}
+
+.people span {
+    color: hsl(333, 80%, 67%);
+}
+
+.rev-par {
+    margin-top: 1.4rem;
+    line-height: 1.7rem;
+}
+
+
+/* FOOTER SECTION  */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:1399px) {
+    .first,
+    .second,
+    .third {
+        text-align: center;
+    }
+    .reviews-section {
+        display: flex;
+        justify-content: space-around;
+    }
+    .review {
+        margin-top: 0 !important;
+        margin-bottom: 2.5rem;
+    }
+    .review:nth-child(3) {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .first,
+    .second,
+    .third {
+        width: 25rem;
+    }
+    /* .first {
+        margin-left: 0;
+    }
+    
+    .second {
+        margin-left: 0.8rem;
+    }
+    
+    .third {
+        margin-left: 1.6rem;
+    } */
+    .first p,
+    .second p,
+    .third p {
+        text-align: left;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .first,
+    .second,
+    .third,
+    .review {
+        margin: 0 auto 1rem !important;
+        width: 20rem;
+    }
+    .review {
+        padding-bottom: 1rem;
+        height: auto;
+        margin-bottom: 2rem !important;
+        padding-bottom: 0;
+    }
+    .none {
+        display: block;
+    }
+    .first p,
+    .second p,
+    .third p {
+        margin-left: 0;
+        text-align: center;
+    }
+    .cont-rev {
+        margin: 0 auto !important;
+    }
+    .first-row {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .stars {
+        margin: 0 auto;
+        padding: 1rem 0 2rem;
+        justify-content: center;
+    }
+    .cont-stars {
+        margin-right: 0.75rem;
+    }
+    @media screen and (max-width:767px) {
+        h1 {
+            font-size: 2.2rem;
+            padding: 0 4rem 1rem;
+        }
+        .description {
+            padding: 0 4rem 1rem;
+        }
+    }
+}
